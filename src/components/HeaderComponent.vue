@@ -78,7 +78,6 @@ header{
 
     #header-container{
         margin: 0 auto;
-        border: 1px solid red;
         display: flex;
         height: 90px
 
@@ -88,7 +87,7 @@ header{
         width: 30%;
 
     img{
-        width: 25%;
+        width: 20%;
     }
     }
 
