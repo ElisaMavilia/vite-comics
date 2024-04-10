@@ -74,16 +74,22 @@
 
 header{
     width: 100%;
+   
 
     #header-container{
         margin: 0 auto;
         border: 1px solid red;
         display: flex;
+        height: 90px
 
     }
 
     #left-navbar{
         width: 30%;
+
+    img{
+        width: 25%;
+    }
     }
 
     #rigth-navbar{
