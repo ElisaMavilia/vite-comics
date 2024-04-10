@@ -107,7 +107,7 @@ header{
         &:hover{
             color: $bluemain;
             border-bottom: 4px solid $bluemain;
-            padding-bottom: 45px;
+            padding-bottom: 40px;
         }
     }
 }
