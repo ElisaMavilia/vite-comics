@@ -1,7 +1,5 @@
 <template>
-  <h1 class="text-center">
-    ciao!
-  </h1>
+  <HeaderComponent />
 </template>
 
 <script>
