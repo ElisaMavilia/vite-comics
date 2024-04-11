@@ -1,7 +1,7 @@
 <template>
    
     <img class="cardimage" :src="image" :alt="info2">
-    <h5 class="card-title text-uppercase ">{{info2}}</h5>   
+    <h5 class="pt-2 card-title text-uppercase ">{{info2}}</h5>   
          
 </template>
 
