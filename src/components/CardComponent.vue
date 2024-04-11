@@ -1,12 +1,8 @@
 <template>
-   <!--  <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12 col-md-3 col-lg-6 py-5"> -->
-                    <img class="cardimage" :src="image" :alt="info2">
-                    <h5 class="card-title text-uppercase ">{{info2}}</h5>   
-          <!--   </div>
-        </div>
-    </div> -->
+   
+    <img class="cardimage" :src="image" :alt="info2">
+    <h5 class="card-title text-uppercase ">{{info2}}</h5>   
+         
 </template>
 
 <script>
