@@ -7,7 +7,7 @@
             <section class="centered-container">
               
                 <div class=" d-flex justify-content-between align-content-center align-items-center flex-wrap">
-                    <div class="single-card py-4" v-for="(item, index) in comicCards" :key="index">
+                    <div class="single-card py-4 ps-4" v-for="(item, index) in comicCards" :key="index">
                     <CardComponent :image="item.thumb" :info2="item.series"/>
                     </div>
                </div>
