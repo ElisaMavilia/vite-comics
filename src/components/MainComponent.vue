@@ -85,7 +85,6 @@
 
     .centered-container{
         margin: 0 auto;
-        border: 1px solid red;
         max-width: 1200px;
     }
 
