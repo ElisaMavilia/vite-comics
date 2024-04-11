@@ -1,14 +1,20 @@
 <template>
     <main>
-        <section id="main-container">
-            <div class="centered-container">
+        <div id="main-container">
+            <section id="jumbotron">
+                hero
+            </section>
+            <section class="centered-container">
                 --> Content goes here <--
-            </div>
-        </section>
+                <div class="row">
+                    <div class="col-12  "></div>
+                </div>
+            </section>
+        </div>
         <section id="blue-content">
-            <div class="centered-container">
-                <ul class="d-flex justify-content-between align-items-center align-content-center">
-                    <li v-for="(item, index) in menu" :key="index" class="pt-2"><a class="text-uppercase" href="item.url"> <img :src="item.img" alt=""> {{ item.object }}</a></li>
+            <div class="centered-container d-flex justify-content-between align-items-center align-content-center">
+                <ul class="d-flex justify-content-between align-items-center align-content-center ps-3 flex-wrap">
+                    <li v-for="(item, index) in menu" :key="index" class="py-5"><a class="text-uppercase" :href="item.url"> <img :class="{ myimg: isActive }" :src="item.img" :alt="item.title"> {{ item.title }}</a></li>
                 </ul></div>
         </section>
     </main>
@@ -21,35 +27,36 @@
             return{
                 menu: [
                     {
-                        img: "/public/images/buy-comics-digital-comics.png",
-                        object: 'digital comics',
+                        img: "/images/buy-comics-digital-comics.png",
+                        title: 'digital comics',
                         url: '#'
                     },
 
                     {
-                        img: "/public/images/buy-comics-merchandise.png",
-                        object: 'dc merchandise',
+                        img: "/images/buy-comics-merchandise.png",
+                        title: 'dc merchandise',
                         url: '#'
                     },
 
                     {
-                        img: "/public/images/buy-comics-subscriptions.png",
-                        object: 'subscriptions',
+                        img: "/images/buy-comics-subscriptions.png",
+                        title: 'subscriptions',
                         url: '#'
                     },
 
                     {
-                        img: "/public/images/buy-comics-shop-locator.png",
-                        object: 'comic shop locator',
+                        img: "/images/buy-comics-shop-locator.png",
+                        title: 'comic shop locator',
                         url: '#'
                     },
 
                     {
-                        img: "/public/images/buy-dc-power-visa.svg",
-                        object: 'dc power visa',
+                        img: "/images/buy-dc-power-visa.svg",
+                        title: 'dc power visa',
                         url: '#'
                     }
-                ]
+                ],
+                isActive: true
             }
         }
     }
@@ -61,20 +68,21 @@
     main{
         width: 100%;
         color: $white;
-        font-size: 1.5em;
+        font-size: 1.2em;
     
    #main-container{ 
         background-color: $black;
+        
     }
 
     .centered-container{
         margin: 0 auto;
         border: 1px solid red;
-        max-width: 1300px;
+        max-width: 1200px;
+
         }
 
     #blue-content{
-        width: 100%;
         background-color: $bluemain;
     }
     a{
@@ -85,11 +93,22 @@
 
     ul{
         list-style: none;
-    }
 
-    img{
-        width: 12%;
+    li{
+        width: calc(100% / 5);
+
+       }
+    }
+    .myimg{
+        width: 20%;
     } 
+
+    #jumbotron{
+        background-image: url("./src/assets/img/jumbotron.jpg");
+        width: 100%;
+        height: 450px;
+        background-size: cover;
+    }
 
     }
 </style>
