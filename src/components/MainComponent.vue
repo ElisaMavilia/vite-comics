@@ -7,8 +7,8 @@
         </section>
         <section id="blue-content">
             <div class="centered-container">
-                <ul class="d-flex justify-content-between align-items-center ">
-                    <li v-for="(item, index) in menu" :key="index" class="pt-2"><a class="text-uppercase" href="item.url"><img :src="item.img" alt=""> {{ item.object }}</a></li>
+                <ul class="d-flex justify-content-between align-items-center align-content-center">
+                    <li v-for="(item, index) in menu" :key="index" class="pt-2"><a class="text-uppercase" href="item.url"> <img :src="item.img" alt=""> {{ item.object }}</a></li>
                 </ul></div>
         </section>
     </main>
@@ -21,31 +21,31 @@
             return{
                 menu: [
                     {
-                        img: "../src/assets/img/buy-comics-digital-comics.png",
+                        img: "/public/images/buy-comics-digital-comics.png",
                         object: 'digital comics',
                         url: '#'
                     },
 
                     {
-                        img: "../src/assets/img/buy-comics-merchandise.png",
+                        img: "/public/images/buy-comics-merchandise.png",
                         object: 'dc merchandise',
                         url: '#'
                     },
 
                     {
-                        img: "../src/assets/img/buy-comics-subscriptions.png",
+                        img: "/public/images/buy-comics-subscriptions.png",
                         object: 'subscriptions',
                         url: '#'
                     },
 
                     {
-                        img: "../src/assets/img/buy-comics-shop-locator.png",
-                        object: 'comic shop ocator',
+                        img: "/public/images/buy-comics-shop-locator.png",
+                        object: 'comic shop locator',
                         url: '#'
                     },
 
                     {
-                        img: "../src/assets/img/buy-dc-power-visa.svg",
+                        img: "/public/images/buy-dc-power-visa.svg",
                         object: 'dc power visa',
                         url: '#'
                     }
