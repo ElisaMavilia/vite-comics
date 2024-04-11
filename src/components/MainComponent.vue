@@ -2,13 +2,17 @@
     <main>
         <div id="main-container">
             <section id="jumbotron">
-                hero
+                
             </section>
             <section class="centered-container">
-                --> Content goes here <--
-                <div class="row">
-                    <div class="col-12  "></div>
-                </div>
+              
+                <div class="cards-container d-flex justify-content-between">
+                    <div class="single-card d-flex" v-for="(item, index) in comicCards" :key="index">
+                    <CardComponent :class="{ cardimage: isActive }" :image="item.thumb" :info2="item.series"/>
+                    </div>
+             
+               </div>
+                
             </section>
         </div>
         <section id="blue-content">
@@ -21,8 +25,13 @@
 </template>
 
 <script>
+    import {comics} from '../data/store.js';
+    import CardComponent from './CardComponent.vue';
     export default {
         name: 'MainComponent',
+        components: {
+            CardComponent
+        },
         data(){
             return{
                 menu: [
@@ -56,7 +65,8 @@
                         url: '#'
                     }
                 ],
-                isActive: true
+                isActive: true,
+                comicCards: comics,
             }
         }
     }
@@ -80,11 +90,26 @@
         border: 1px solid red;
         max-width: 1200px;
 
-        }
+    
+    }
 
     #blue-content{
         background-color: $bluemain;
+
+       
+
+    .card-container{
+        width: calc(100% / 6);
     }
+
+    .cardimage{
+        width: 100px;
+        height: 100px;
+        display: block;
+    }
+
+    }
+
     a{
         text-decoration: none;
         color: $white;
@@ -110,5 +135,6 @@
         background-size: cover;
     }
 
+   
     }
 </style>
