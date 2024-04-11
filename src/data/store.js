@@ -56,7 +56,7 @@ const comics= [
     {
         thumb: "https://static.wikia.nocookie.net/marvel_dc/images/6/64/Batman_Three_Jokers_Collected.jpg",
         price: "$6.99",
-        serie: "Batman: Three Jokers",
+        series: "Batman: Three Jokers",
         type: "comic book",
     },
     {

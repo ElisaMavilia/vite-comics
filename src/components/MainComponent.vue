@@ -6,13 +6,11 @@
             </section>
             <section class="centered-container">
               
-                <div class="cards-container d-flex justify-content-between">
-                    <div class="single-card d-flex" v-for="(item, index) in comicCards" :key="index">
-                    <CardComponent :class="{ cardimage: isActive }" :image="item.thumb" :info2="item.series"/>
+                <div class=" d-flex justify-content-between align-content-center align-items-center flex-wrap">
+                    <div class="single-card py-4" v-for="(item, index) in comicCards" :key="index">
+                    <CardComponent :image="item.thumb" :info2="item.series"/>
                     </div>
-             
                </div>
-                
             </section>
         </div>
         <section id="blue-content">
@@ -89,25 +87,10 @@
         margin: 0 auto;
         border: 1px solid red;
         max-width: 1200px;
-
-    
     }
 
     #blue-content{
         background-color: $bluemain;
-
-       
-
-    .card-container{
-        width: calc(100% / 6);
-    }
-
-    .cardimage{
-        width: 100px;
-        height: 100px;
-        display: block;
-    }
-
     }
 
     a{
@@ -135,6 +118,8 @@
         background-size: cover;
     }
 
-   
+    .single-card{
+        width: calc(100% / 6);
+    }
     }
 </style>
