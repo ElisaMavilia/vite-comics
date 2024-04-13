@@ -15,9 +15,12 @@
         </div>
         <section id="blue-content">
             <div class="centered-container d-flex justify-content-between align-items-center align-content-center">
-                <ul class="d-flex justify-content-between align-items-center align-content-center ps-3 flex-wrap">
+                <div class="blue-wrapper">
+                    <ul class="d-flex justify-content-between align-items-center align-content-center ps-3 flex-wrap">
                     <li v-for="(item, index) in menu" :key="index" class="py-5"><a class="text-uppercase" :href="item.url"> <img :class="{ myimg: isActive }" :src="item.img" :alt="item.title"> {{ item.title }}</a></li>
-                </ul></div>
+                </ul>
+                </div>
+                </div>
         </section>
     </main>
 </template>
@@ -119,6 +122,7 @@
 
     .single-card{
         width: calc(100% / 6);
+        cursor: pointer;
     }
     }
 </style>

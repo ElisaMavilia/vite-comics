@@ -74,3 +74,49 @@ const comics= [
   ];
   
   export {comics};
+
+  const footermenu = [
+    {
+        title: "DC Comics",
+        menu1: "Characters",
+        menu2: "Comics",
+        menu3: "Movies",
+        menu4: "TV",
+        menu5: "Games",
+        menu6: "Videos",
+        menu7: "News"
+    },
+    {
+        title: "Shop",
+        menu1: "Shop DC",
+        menu2: "Shop DC Collectibles",
+    },
+
+    {
+        title: "DC",
+        menu1: "Terms of Use",
+        menu2: "Privacy Policy (New)",
+        menu3: "Ad Choices",
+        menu4: "Advertising",
+        menu5: "Jobs",
+        menu6: "Subscriptions",
+        menu7: "Talent Workshops",
+        menu8: "CPSC Certificates",
+        menu9: "Ratings",
+        menu10: "Shop Help",
+        menu11: "Contact Us",
+    },
+
+    {
+        title: "Sites",
+        menu1: "DC",
+        menu2: "MAD Magazine",
+        menu3: "DC Kids",
+        menu4: "DC Universe",
+        menu5: "DC Power Visa",
+    }
+
+  ]; export {footermenu};
+
+    
+  
